@@ -1,20 +1,22 @@
+#include "holberton.h"
 /**
- * File: 3-islower.c
- * Auth: Brennan D Baraban
- */
-
-#include "main.h"
-
-/**
- * _islower - Checks if a character is lowercase.
- * @c: The character to be checked.
+ * print_alphabet_x10 - a function that prints 10 times the alphabet
  *
- * Return: 1 if character is lowercase, 0 otherwise.
+ * Return: x10 a-z
  */
-int _islower(int c)
+void print_alphabet_x10(void)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
+	int n, co;
+
+	co = 0;
+
+	while (co < 10)
+	{
+		for (n = 'a'; n <= 'z'; n++)
+		{
+			_putchar(n);
+		}
+		co++;
+		_putchar('\n');
+	}
 }
