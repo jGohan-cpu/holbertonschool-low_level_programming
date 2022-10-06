@@ -1,24 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+  * _isalpha - Checks for alphabetic character
+  * @c: The character to be checked
+  *
+  * Return: 1 for alphabetic character or 0 for anything else
+  */
+int _isalpha(int c)
 {
-	char low, e, q;
-
-	e = 'e';
-	q = 'q';
-
-	for (low = 'a'; low <= 'z'; low++)
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
-		if (low != e && low != q)
-			putchar(low);
+		return (1);
 	}
-		printf("\n");
 
 	return (0);
 }
