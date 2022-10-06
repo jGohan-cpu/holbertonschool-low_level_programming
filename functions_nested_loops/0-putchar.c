@@ -1,10 +1,10 @@
-#include_"main.h"
+#include"main.h"
 /**
  * main -Prints
  *
  * Return: Prints a file called _putchar
  */
-int_main(void)
+int main(void)
 {
         _putchar('_');
         _putchar('p');
