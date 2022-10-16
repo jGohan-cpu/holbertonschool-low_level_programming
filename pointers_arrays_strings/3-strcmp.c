@@ -1,21 +1,19 @@
 #include "main.h"
 
 /**
- * _strncat - function to concatenate strings
- * @dest : pointer
- * @src : pointer
- * @n : variable integer
+ * _strcmp - comparing strings
+ * @s1 : var pointer
+ * @s2 : pointer
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
 {
-	int a, b;
+	int a;
 
-	for (a = 0; dest[a] != '\0'; a++)
-		;
-	for (b = 0; b < n && src[b] != '\0'; b++)
+	for (a = 0; s1[a] != '\0' && s2[a] != '\0'; a++)
 	{
-		dest[a + b] = src[b];
+		if (s1[a] != s2[a])
+			return (s1[a] - s2[a]);
 	}
-	return (dest);
+	return (0);
 }
