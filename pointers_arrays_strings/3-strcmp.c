@@ -7,7 +7,7 @@
  * @n : variable integer
  * Return: Always 0.
  */
-char *_strncat(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
 	int a, b;
 
